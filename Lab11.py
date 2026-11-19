@@ -82,7 +82,7 @@ elif selection in {"2", "3"}:
         if selection == "2":
             if scores:
                 print(f"Min: {rounded_percent(min(scores))}%")
-                print(f"Avg: {rounded_percent(sum(scores) / len(scores))}%")
+                print(f"Avg: {int(sum(scores) / len(scores))}%")
                 print(f"Max: {rounded_percent(max(scores))}%")
         else:
             plt.hist(scores, bins=[0, 25, 50, 75, 100])
